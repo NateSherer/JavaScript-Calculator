@@ -1,0 +1,80 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* This targets all of the buttons inside the keys id */
+#button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 1fr means fractional and it also means they take up even amount of space */
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Styles the size of the input box */
+#display{
+    width: 400px;
+    height: 5px;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 50px; 
+    background-color: gray;
+    color: white;
+    font-size: 32px;
+}
+
+/* Styles the size of the calculator and how it looks color wise too */
+#calculator{
+    background-color: black;
+    border-radius: 15px;
+    max-width: 550px;
+}
+
+input{
+    width: 400px;
+    height: 30px; 
+}
+
+/* Styles how each button will look*/
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    font-size: 32px;
+    cursor: pointer;
+    background-color: orange;
+}
+
+/* This code below makes it so that on smaller screens it will look the same or "responsive" */
+@media (max-width: 600px){
+    #buttonv{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px
+    }
+
+    button{
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    #display{
+        width: 300px;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    #calculator{
+        max-width: 320px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
